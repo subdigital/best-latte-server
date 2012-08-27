@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddPhotoToLatte	db/migrate/20120826190243_add_photo_to_latte.rb	/^class AddPhotoToLatte < ActiveRecord::Migration$/;"	c
+AdminUser	app/models/admin_user.rb	/^class AdminUser < ActiveRecord::Base$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:BestLatte
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+BestLatte	config/application.rb	/^module BestLatte$/;"	m
+CreateAdminNotes	db/migrate/20120826134721_create_admin_notes.rb	/^class CreateAdminNotes < ActiveRecord::Migration$/;"	c
+CreateLattes	db/migrate/20120826174148_create_lattes.rb	/^class CreateLattes < ActiveRecord::Migration$/;"	c
+DeviseCreateAdminUsers	db/migrate/20120826184719_devise_create_admin_users.rb	/^class DeviseCreateAdminUsers < ActiveRecord::Migration$/;"	c
+Latte	app/models/latte.rb	/^class Latte < ActiveRecord::Base$/;"	c
+LattesController	app/controllers/lattes_controller.rb	/^class LattesController < ApplicationController$/;"	c
+LattesHelper	app/helpers/lattes_helper.rb	/^module LattesHelper$/;"	m
+MoveAdminNotesToComments	db/migrate/20120826134722_move_admin_notes_to_comments.rb	/^class MoveAdminNotesToComments < ActiveRecord::Migration$/;"	c
+PhotoUploader	app/uploaders/photo_uploader.rb	/^class PhotoUploader < CarrierWave::Uploader::Base$/;"	c
+about	public/index.html	/^      function about() {$/;"	f
+change	db/migrate/20120826174148_create_lattes.rb	/^  def change$/;"	f	class:CreateLattes
+change	db/migrate/20120826184719_devise_create_admin_users.rb	/^  def change$/;"	f	class:DeviseCreateAdminUsers
+change	db/migrate/20120826190243_add_photo_to_latte.rb	/^  def change$/;"	f	class:AddPhotoToLatte
+create	app/controllers/lattes_controller.rb	/^  def create$/;"	f	class:LattesController
+default_url	app/uploaders/photo_uploader.rb	/^  def default_url$/;"	f	class:PhotoUploader
+down	db/migrate/20120826134721_create_admin_notes.rb	/^  def self.down$/;"	F	class:CreateAdminNotes
+down	db/migrate/20120826134722_move_admin_notes_to_comments.rb	/^  def self.down$/;"	F	class:MoveAdminNotesToComments
+index	app/controllers/lattes_controller.rb	/^  def index$/;"	f	class:LattesController
+store_dir	app/uploaders/photo_uploader.rb	/^  def store_dir$/;"	f	class:PhotoUploader
+up	db/migrate/20120826134721_create_admin_notes.rb	/^  def self.up$/;"	F	class:CreateAdminNotes
+up	db/migrate/20120826134722_move_admin_notes_to_comments.rb	/^  def self.up$/;"	F	class:MoveAdminNotesToComments

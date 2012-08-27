@@ -1,0 +1,3167 @@
+Connecting to database specified by database.yml
+
+
+Started POST "/" for 127.0.0.1 at 2012-08-26 12:50:23 -0500
+Connecting to database specified by database.yml
+
+PG::Error (FATAL:  database "best_latte_development" does not exist
+):
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `connect'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4387236889531659502__call__959772466262831065__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (149.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-08-26 12:51:37 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started POST "/lattes" for 127.0.0.1 at 2012-08-26 12:51:46 -0500
+
+ActionController::RoutingError (undefined local variable or method `skip_authenticity_token' for LattesController:Class):
+  app/controllers/lattes_controller.rb:2:in `<class:LattesController>'
+  app/controllers/lattes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/lattes" for 127.0.0.1 at 2012-08-26 12:52:59 -0500
+Processing by LattesController#create as HTML
+  Parameters: {"latte"=>{"location"=>"Starbucks", "comments"=>"it was good"}}
+PG::Error: ERROR:  relation "lattes" does not exist
+LINE 4:              WHERE a.attrelid = '"lattes"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"lattes"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 56ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "lattes" does not exist
+LINE 4:              WHERE a.attrelid = '"lattes"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"lattes"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/lattes_controller.rb:10:in `new'
+  app/controllers/lattes_controller.rb:10:in `create'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+Connecting to database specified by database.yml
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (53.1ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateLattes (20120826174148)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (34.8ms)[0m  CREATE TABLE "lattes" ("id" serial primary key, "location" character varying(255), "comments" text, "photo_url" character varying(255), "submitted_by" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120826174148')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (2.5ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"lattes"'::regclass
+
+  [1m[36m (1.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'lattes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+
+
+Started POST "/lattes" for 127.0.0.1 at 2012-08-26 12:53:31 -0500
+Processing by LattesController#create as HTML
+  Parameters: {"latte"=>{"location"=>"Starbucks", "comments"=>"it was good"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (64.5ms)[0m  INSERT INTO "lattes" ("comments", "created_at", "location", "photo_url", "submitted_by", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["comments", "it was good"], ["created_at", Sun, 26 Aug 2012 17:53:31 UTC +00:00], ["location", "Starbucks"], ["photo_url", nil], ["submitted_by", nil], ["updated_at", Sun, 26 Aug 2012 17:53:31 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 83ms (Views: 0.5ms | ActiveRecord: 73.1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLattes (20120826174148)
+Migrating to CreateRailsAdminHistoriesTable (20120826175723)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "rails_admin_histories" ("id" serial primary key, "message" text, "username" character varying(255), "item" integer, "table" character varying(255), "month" smallint, "year" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rails_admin_histories'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.8ms)[0m  [1mCREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120826175723')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"lattes"'::regclass
+[0m
+  [1m[35m (1.3ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'lattes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (1.4ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"rails_admin_histories"'::regclass
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rails_admin_histories'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_rails_admin_histories on rails_admin_histories (0.2ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49171
+ AND a.attnum IN (4,5,6,7)
+[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 12:58:27 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-26 12:58:27 -0500
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-08-26 12:58:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateLattes (20120826174148)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (3.8ms)[0m  CREATE TABLE "lattes" ("id" serial primary key, "location" character varying(255), "comments" text, "photo_url" character varying(255), "submitted_by" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120826174148')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (2.1ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"lattes"'::regclass
+
+  [1m[36m (1.5ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'lattes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-26 13:50:26 -0500
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 13:50:28 -0500
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-08-26 13:50:28 -0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+PG::Error: ERROR:  relation "admin_users" does not exist
+LINE 4:              WHERE a.attrelid = '"admin_users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"admin_users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "admin_users" does not exist
+LINE 4:              WHERE a.attrelid = '"admin_users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"admin_users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1158:in `async_exec'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1158:in `exec_no_cache'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:664:in `block in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:663:in `exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1283:in `column_definitions'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:859:in `columns'
+  activerecord (3.2.8) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:228:in `default'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:243:in `column_defaults'
+  activerecord (3.2.8) lib/active_record/base.rb:482:in `initialize'
+  devise (2.1.2) app/controllers/devise_controller.rb:102:in `new'
+  devise (2.1.2) app/controllers/devise_controller.rb:102:in `build_resource'
+  devise (2.1.2) app/controllers/devise/sessions_controller.rb:8:in `new'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__1952420625527221726__process_action__2990280199153016717__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/mapper.rb:42:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3566110586434728997__call__685415369698587086__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-08-26 13:50:36 -0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+PG::Error: ERROR:  relation "admin_users" does not exist
+LINE 4:              WHERE a.attrelid = '"admin_users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"admin_users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "admin_users" does not exist
+LINE 4:              WHERE a.attrelid = '"admin_users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"admin_users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1158:in `async_exec'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1158:in `exec_no_cache'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:664:in `block in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:663:in `exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1283:in `column_definitions'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:859:in `columns'
+  activerecord (3.2.8) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:228:in `default'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:243:in `column_defaults'
+  activerecord (3.2.8) lib/active_record/base.rb:482:in `initialize'
+  devise (2.1.2) app/controllers/devise_controller.rb:102:in `new'
+  devise (2.1.2) app/controllers/devise_controller.rb:102:in `build_resource'
+  devise (2.1.2) app/controllers/devise/sessions_controller.rb:8:in `new'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__1952420625527221726__process_action__2990280199153016717__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/mapper.rb:42:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3566110586434728997__call__685415369698587086__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAdminNotes (20120826134721)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "admin_notes" ("id" serial primary key, "resource_id" character varying(255) NOT NULL, "resource_type" character varying(255) NOT NULL, "admin_user_id" integer, "admin_user_type" character varying(255), "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.4ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_notes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.9ms)[0m  [1mCREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "admin_notes" ("resource_type", "resource_id")[0m
+  [1m[35m (0.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_notes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_admin_notes_on_resource_type_and_resource_id on admin_notes (0.2ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (3,2)
+[0m
+  [1m[35m (0.7ms)[0m  CREATE INDEX "index_admin_notes_on_admin_user_type_and_admin_user_id" ON "admin_notes" ("admin_user_type", "admin_user_id")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120826134721')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+Migrating to MoveAdminNotesToComments (20120826134722)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_notes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_admin_notes_on_admin_user_type_and_admin_user_id on admin_notes (0.2ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (5,4)
+[0m
+  [1m[35mColumns for index index_admin_notes_on_resource_type_and_resource_id on admin_notes (0.1ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (3,2)
+
+  [1m[36m (0.3ms)[0m  [1mDROP INDEX "index_admin_notes_on_admin_user_type_and_admin_user_id"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "admin_notes" RENAME TO "active_admin_comments"
+  [1m[36mPK and serial sequence (1.5ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"active_admin_comments"'::regclass
+[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "admin_notes_id_seq" RENAME TO "active_admin_comments_id_seq"
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "active_admin_comments" RENAME COLUMN "admin_user_type" TO "author_type"[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "active_admin_comments" RENAME COLUMN "admin_user_id" TO "author_id"
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "active_admin_comments" ADD COLUMN "namespace" character varying(255)[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'active_admin_comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_admin_notes_on_resource_type_and_resource_id on active_admin_comments (0.2ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (3,2)
+[0m
+  [1m[35m (0.7ms)[0m  CREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")
+  [1m[36m (0.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'active_admin_comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_active_admin_comments_on_namespace on active_admin_comments (0.1ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (9)
+
+  [1m[36mColumns for index index_admin_notes_on_resource_type_and_resource_id on active_admin_comments (0.1ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (3,2)
+[0m
+  [1m[35m (0.7ms)[0m  CREATE INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")
+  [1m[36m (0.3ms)[0m  [1mUPDATE active_admin_comments SET namespace='admin'[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120826134722')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLattes (20120826174148)
+Migrating to DeviseCreateAdminUsers (20120826184719)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "admin_users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mAdminUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1
+  [1m[36mSQL (27.6ms)[0m  [1mINSERT INTO "admin_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["created_at", Sun, 26 Aug 2012 18:50:37 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@example.com"], ["encrypted_password", "$2a$10$tI/62tsC28lpi0zde3lLPe.l5tnJFQHT9q7eVw9A5ethOHEgHdRrO"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sun, 26 Aug 2012 18:50:37 UTC +00:00]]
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (0.6ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_admin_users_on_email on admin_users (0.3ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49215
+ AND a.attnum IN (2)
+[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120826184719')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (2.8ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"active_admin_comments"'::regclass
+
+  [1m[36m (1.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'active_admin_comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_active_admin_comments_on_author_type_and_author_id on active_admin_comments (0.3ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (5,4)
+
+  [1m[36mColumns for index index_active_admin_comments_on_namespace on active_admin_comments (0.3ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (9)
+[0m
+  [1m[35mColumns for index index_admin_notes_on_resource_type_and_resource_id on active_admin_comments (0.3ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (3,2)
+
+  [1m[36mPK and serial sequence (1.3ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"admin_users"'::regclass
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_admin_users_on_email on admin_users (0.2ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49215
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_admin_users_on_reset_password_token on admin_users (0.1ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49215
+ AND a.attnum IN (4)
+
+  [1m[36mPK and serial sequence (1.3ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"lattes"'::regclass
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'lattes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-08-26 13:50:38 -0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/devise/shared/_links.erb (1.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (71.5ms)
+Compiled active_admin.css  (1699ms)  (pid 14596)
+Compiled jquery.js  (2ms)  (pid 14596)
+Compiled jquery-ui.js  (30ms)  (pid 14596)
+Compiled jquery_ujs.js  (0ms)  (pid 14596)
+Compiled active_admin/application.js  (0ms)  (pid 14596)
+Compiled active_admin/base.js  (88ms)  (pid 14596)
+Compiled active_admin.js  (96ms)  (pid 14596)
+Completed 200 OK in 2024ms (Views: 2006.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /active_admin.css - 200 OK (11ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /jquery-ui.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /active_admin/application.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /active_admin/base.js - 200 OK (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-26 13:50:40 -0500
+Served asset /active_admin.js - 200 OK (5ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-08-26 13:50:52 -0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OCLeFLYZlM1T1Ip4b5pqk+n5Ib3VTrsPSVs9v2p/ezo=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "admin_users" SET "last_sign_in_at" = '2012-08-26 18:50:52.608150', "current_sign_in_at" = '2012-08-26 18:50:52.608150', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2012-08-26 18:50:52.609169' WHERE "admin_users"."id" = 1[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 140ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 13:50:52 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (9.8ms)
+Completed 200 OK in 25ms (Views: 13.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:50:52 -0500
+Served asset /active_admin.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 13:51:19 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (8.3ms)
+Completed 200 OK in 38ms (Views: 11.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:20 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:20 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:51:21 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.5ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (142.0ms)
+Completed 200 OK in 150ms (Views: 143.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:22 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:22 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-26 13:51:22 -0500
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (7ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-08-26 13:51:22 -0500
+Served asset /active_admin/datepicker/datepicker-nipple.png - 200 OK (6ms)
+
+
+Started GET "/admin/lattes/new" for 127.0.0.1 at 2012-08-26 13:51:24 -0500
+Processing by Admin::LattesController#new as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (64.3ms)
+Completed 200 OK in 75ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:24 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:24 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:51:28 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (103.1ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:28 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:28 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes/new" for 127.0.0.1 at 2012-08-26 13:51:30 -0500
+Processing by Admin::LattesController#new as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (53.0ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:30 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:30 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started POST "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:51:40 -0500
+Processing by Admin::LattesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OCLeFLYZlM1T1Ip4b5pqk+n5Ib3VTrsPSVs9v2p/ezo=", "latte"=>{"location"=>"Starbucks", "comments"=>"It was decent.", "photo_url"=>"", "submitted_by"=>"Ben"}, "commit"=>"Create Latte"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "lattes" ("comments", "created_at", "location", "photo_url", "submitted_by", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comments", "It was decent."], ["created_at", Sun, 26 Aug 2012 18:51:40 UTC +00:00], ["location", "Starbucks"], ["photo_url", ""], ["submitted_by", "Ben"], ["updated_at", Sun, 26 Aug 2012 18:51:40 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/lattes/1
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/lattes/1" for 127.0.0.1 at 2012-08-26 13:51:40 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Latte' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Latte' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (32.7ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:40 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:40 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 13:51:49 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (8.2ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:49 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:49 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:51:50 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "lattes" 
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mLatte Load (0.6ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (116.6ms)
+Completed 200 OK in 120ms (Views: 116.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:50 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:50 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-26 13:51:50 -0500
+Served asset /active_admin/orderable.png - 200 OK (6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 13:51:51 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (7.7ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:51 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:51 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:51:53 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "lattes" 
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mLatte Load (0.6ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (140.8ms)
+Completed 200 OK in 144ms (Views: 140.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:53 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:53 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 13:51:54 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (7.9ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:54 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:54 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:51:55 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "lattes" 
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (140.9ms)
+Completed 200 OK in 145ms (Views: 141.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:51:55 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:51:55 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 13:53:10 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.3ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.3ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (125.2ms)
+Completed 200 OK in 138ms (Views: 134.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 13:53:11 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 13:53:11 -0500
+Served asset /active_admin.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-08-26 13:53:12 -0500
+Served asset /active_admin/datepicker/datepicker-nipple.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-26 13:53:12 -0500
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-26 13:53:12 -0500
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAdminNotes (20120826134721)
+Migrating to MoveAdminNotesToComments (20120826134722)
+Migrating to CreateLattes (20120826174148)
+Migrating to DeviseCreateAdminUsers (20120826184719)
+Migrating to AddPhotoToLatte (20120826190243)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAdminNotes (20120826134721)
+Migrating to MoveAdminNotesToComments (20120826134722)
+Migrating to CreateLattes (20120826174148)
+Migrating to DeviseCreateAdminUsers (20120826184719)
+Migrating to AddPhotoToLatte (20120826190243)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "lattes" RENAME COLUMN "photo_url" TO "photo"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120826190243')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (2.2ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"active_admin_comments"'::regclass
+[0m
+  [1m[35m (1.5ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'active_admin_comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_active_admin_comments_on_author_type_and_author_id on active_admin_comments (0.3ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (5,4)
+[0m
+  [1m[35mColumns for index index_active_admin_comments_on_namespace on active_admin_comments (0.3ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (9)
+
+  [1m[36mColumns for index index_admin_notes_on_resource_type_and_resource_id on active_admin_comments (0.1ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49200
+ AND a.attnum IN (3,2)
+[0m
+  [1m[35mPK and serial sequence (1.4ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"admin_users"'::regclass
+
+  [1m[36m (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'admin_users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_admin_users_on_email on admin_users (0.4ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49215
+ AND a.attnum IN (2)
+
+  [1m[36mColumns for index index_admin_users_on_reset_password_token on admin_users (0.4ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49215
+ AND a.attnum IN (4)
+[0m
+  [1m[35mPK and serial sequence (1.5ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"lattes"'::regclass
+
+  [1m[36m (0.6ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'lattes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:07:13 -0500
+
+NameError (uninitialized constant Latte::PhotoUploader):
+  app/models/latte.rb:3:in `<class:Latte>'
+  app/models/latte.rb:1:in `<top (required)>'
+  app/admin/lattes.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:11:13 -0500
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-26 14:11:21 -0500
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:11:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:14:13 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (32.1ms)
+Completed 500 Internal Server Error in 116ms
+
+ActionView::Template::Error (undefined method `name' for #<Latte:0x007f95f6f04748>):
+    1: render view_factory.dashboard_page
+  app/admin/dashboards.rb:6:in `block (4 levels) in <top (required)>'
+  app/admin/dashboards.rb:5:in `block (3 levels) in <top (required)>'
+  app/admin/dashboards.rb:4:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:14:30 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (45.4ms)
+Completed 200 OK in 76ms (Views: 47.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:14:30 -0500
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:14:30 -0500
+Served asset /active_admin.js - 304 Not Modified (9ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 14:14:45 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.5ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.6ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (205.6ms)
+Completed 200 OK in 225ms (Views: 216.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:14:45 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:14:45 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-26 14:14:46 -0500
+Served asset /active_admin/orderable.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-26 14:14:46 -0500
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-08-26 14:14:46 -0500
+Served asset /active_admin/datepicker/datepicker-nipple.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:14:47 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.3ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (8.6ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:14:47 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:14:47 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:30:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/coffee-nophoto.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:30:34 -0500
+Served asset /coffee-nophoto.png - 200 OK (5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:31:28 -0500
+
+LoadError (cannot load such file -- mini_magick):
+  app/uploaders/photo_uploader.rb:4:in `<class:PhotoUploader>'
+  app/uploaders/photo_uploader.rb:3:in `<top (required)>'
+  app/models/latte.rb:3:in `<class:Latte>'
+  app/models/latte.rb:1:in `<top (required)>'
+  app/admin/lattes.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:36:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:36:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-26 14:37:02 -0500
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:37:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:38:57 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (37.2ms)
+Completed 200 OK in 130ms (Views: 47.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:38:57 -0500
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:38:57 -0500
+Served asset /active_admin.js - 304 Not Modified (34ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:40:33 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (29.7ms)
+Completed 500 Internal Server Error in 99ms
+
+ActionView::Template::Error (undefined method `asset_path' for :PhotoUploader):
+    1: render view_factory.dashboard_page
+  app/uploaders/photo_uploader.rb:22:in `default_url'
+  app/admin/dashboards.rb:7:in `block (5 levels) in <top (required)>'
+  app/admin/dashboards.rb:6:in `block (4 levels) in <top (required)>'
+  app/admin/dashboards.rb:5:in `block (3 levels) in <top (required)>'
+  app/admin/dashboards.rb:4:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:40:44 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.4ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.6ms)
+Completed 200 OK in 50ms (Views: 19.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:40:44 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:40:44 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:40:59 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (50.6ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (undefined method `image' for #<ActiveAdmin::Views::DashboardSection:0x007fdd91a3e5c8>):
+    1: render view_factory.dashboard_page
+  app/admin/dashboards.rb:7:in `block (5 levels) in <top (required)>'
+  app/admin/dashboards.rb:6:in `block (4 levels) in <top (required)>'
+  app/admin/dashboards.rb:5:in `block (3 levels) in <top (required)>'
+  app/admin/dashboards.rb:4:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:41:19 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (19.9ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (undefined method `image' for #<ActiveAdmin::Views::DashboardSection:0x007fdd8ff07ca0>):
+    1: render view_factory.dashboard_page
+  app/admin/dashboards.rb:7:in `block (5 levels) in <top (required)>'
+  app/admin/dashboards.rb:6:in `block (4 levels) in <top (required)>'
+  app/admin/dashboards.rb:5:in `block (3 levels) in <top (required)>'
+  app/admin/dashboards.rb:4:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:41:27 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.4ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (18.2ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    1: render view_factory.dashboard_page
+  app/admin/dashboards.rb:7:in `block (5 levels) in <top (required)>'
+  app/admin/dashboards.rb:6:in `block (4 levels) in <top (required)>'
+  app/admin/dashboards.rb:5:in `block (3 levels) in <top (required)>'
+  app/admin/dashboards.rb:4:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:41:34 -0500
+
+SyntaxError (/Users/ben/nsscreencast/sourcecode/031-forms/best_latte/app/admin/dashboards.rb:55: syntax error, unexpected keyword_end, expecting $end):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:49:43 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.4ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.4ms)
+Completed 200 OK in 48ms (Views: 19.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:49:43 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:49:43 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:49:58 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (51.9ms)
+Completed 200 OK in 83ms (Views: 54.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:49:58 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:49:58 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:51:03 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (19.5ms)
+Completed 200 OK in 85ms (Views: 21.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:51:04 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:51:04 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:51:04 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:51:18 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.4ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.4ms)
+Completed 200 OK in 82ms (Views: 19.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:51:18 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:51:18 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:51:18 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:51:49 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (18.3ms)
+Completed 200 OK in 56ms (Views: 20.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:51:49 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:51:49 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:51:49 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:52:12 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.4ms)
+Completed 200 OK in 47ms (Views: 19.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:52:12 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:52:12 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:52:12 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:52:19 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (16.5ms)
+Completed 200 OK in 47ms (Views: 18.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:52:19 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:52:19 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:52:20 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:52:28 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.6ms)
+Completed 200 OK in 51ms (Views: 20.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:52:29 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:52:29 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:52:29 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:52:39 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (18.2ms)
+Completed 200 OK in 86ms (Views: 20.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:52:39 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:52:39 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:52:39 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:52:45 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.7ms)
+Completed 200 OK in 83ms (Views: 19.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:52:45 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:52:45 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:52:45 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:53:18 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (22.8ms)
+Completed 200 OK in 95ms (Views: 25.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:53:19 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:53:19 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:53:19 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:56:17 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (21.5ms)
+Completed 200 OK in 55ms (Views: 23.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:56:17 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:56:17 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:56:17 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:56:23 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (17.7ms)
+Completed 200 OK in 48ms (Views: 19.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:56:23 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:56:23 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:56:23 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:56:44 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (19.0ms)
+Completed 200 OK in 50ms (Views: 21.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:56:44 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:56:44 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:56:44 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 14:56:54 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (54.3ms)
+Completed 200 OK in 85ms (Views: 56.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:56:54 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:56:54 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 14:56:55 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 14:57:01 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.5ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.4ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (482.2ms)
+Completed 200 OK in 568ms (Views: 530.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:57:02 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:57:02 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-26 14:57:02 -0500
+Served asset /active_admin/orderable.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-26 14:57:02 -0500
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-08-26 14:57:02 -0500
+Served asset /active_admin/datepicker/datepicker-nipple.png - 304 Not Modified (2ms)
+
+
+Started GET "/admin/lattes/1" for 127.0.0.1 at 2012-08-26 14:57:06 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.4ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Latte' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Latte' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (38.5ms)
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 14:57:06 -0500
+Served asset /active_admin.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 14:57:06 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/nsscreencast/sourcecode/031-forms/best_latte/config/environment.rb:5)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:17:34 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.3ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.4ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (328.5ms)
+Completed 200 OK in 424ms (Views: 379.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:17:35 -0500
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:17:35 -0500
+Served asset /active_admin.js - 304 Not Modified (92ms)
+
+
+Started GET "/admin/lattes/new" for 127.0.0.1 at 2012-08-26 15:17:37 -0500
+Processing by Admin::LattesController#new as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (51.9ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:17:37 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:17:37 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:18:56 -0500
+Processing by Admin::LattesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OCLeFLYZlM1T1Ip4b5pqk+n5Ib3VTrsPSVs9v2p/ezo=", "latte"=>{"location"=>"Inversion", "comments"=>"Wow, this is cool art.", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f9793b5d538 @original_filename="latte_art8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"latte[photo]\"; filename=\"latte_art8.jpeg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tm/wctmr5rn5bx1_2w7lql5mg840000gn/T/RackMultipart20120826-36257-1ovt0xj>>, "submitted_by"=>"Ben"}, "commit"=>"Create Latte"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: photo):
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
+  activerecord (3.2.8) lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
+  activerecord (3.2.8) lib/active_record/base.rb:498:in `initialize'
+  inherited_resources (1.3.1) lib/inherited_resources/base_helpers.rb:52:in `new'
+  inherited_resources (1.3.1) lib/inherited_resources/base_helpers.rb:52:in `build_resource'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:15:in `build_resource'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:31:in `create'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/actions.rb:48:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__4187127054294065952__process_action__2961915641702219949__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2461184832312194425__call__3879012555435462576__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started POST "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:19:15 -0500
+Processing by Admin::LattesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OCLeFLYZlM1T1Ip4b5pqk+n5Ib3VTrsPSVs9v2p/ezo=", "latte"=>{"location"=>"Inversion", "comments"=>"Wow, this is cool art.", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f979a80ce90 @original_filename="latte_art8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"latte[photo]\"; filename=\"latte_art8.jpeg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tm/wctmr5rn5bx1_2w7lql5mg840000gn/T/RackMultipart20120826-36257-1joplxh>>, "submitted_by"=>"Ben"}, "commit"=>"Create Latte"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "lattes" ("comments", "created_at", "location", "photo", "submitted_by", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["comments", "Wow, this is cool art."], ["created_at", Sun, 26 Aug 2012 20:19:17 UTC +00:00], ["location", "Inversion"], ["photo", "latte_art8.jpeg"], ["submitted_by", "Ben"], ["updated_at", Sun, 26 Aug 2012 20:19:17 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 3962ms
+
+Excon::Errors::NotFound (Expected(200) <=> Actual(404 Not Found)
+  request => {:connect_timeout=>60, :headers=>{"Content-Length"=>33275, "Content-Type"=>"image/jpeg", "x-amz-acl"=>"public-read", "Cache-Control"=>"max-age=60000", "Date"=>"Sun, 26 Aug 2012 20:19:17 +0000", "Authorization"=>"AWS 0A9CB5T4CGPC3KTCM382:jrc5rj0aW6LxP7RZBAweaIv3WI8=", "Host"=>"best-latte.s3.amazonaws.com:443"}, :instrumentor_name=>"excon", :mock=>false, :read_timeout=>60, :retry_limit=>4, :ssl_ca_file=>"/Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/excon-0.13.4/data/cacert.pem", :ssl_verify_peer=>true, :write_timeout=>60, :host=>"best-latte.s3.amazonaws.com", :path=>"/uploads%2Flatte%2Fphoto%2F2%2Flatte_art8.jpeg", :port=>"443", :query=>nil, :scheme=>"https", :body=>#<File:/Users/ben/nsscreencast/sourcecode/031-forms/best_latte/public/uploads/tmp/20120826-1519-36257-0212/latte_art8.jpeg>, :expects=>200, :idempotent=>true, :method=>"PUT"}
+  response => #<Excon::Response:0x007f9793231680 @body="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>best-latte</BucketName><RequestId>C6A651B5FCAA8FB1</RequestId><HostId>G30/e+Uv8fglxA3FNlvIT9iqRWyV3xT53zbUCQ7lRvh0EEUwXnbe57R/T2IC9u9M</HostId></Error>", @headers={"x-amz-request-id"=>"C6A651B5FCAA8FB1", "x-amz-id-2"=>"G30/e+Uv8fglxA3FNlvIT9iqRWyV3xT53zbUCQ7lRvh0EEUwXnbe57R/T2IC9u9M", "Content-Type"=>"application/xml", "Transfer-Encoding"=>"chunked", "Date"=>"Sun, 26 Aug 2012 20:19:17 GMT", "nnCoection"=>"close", "Server"=>"AmazonS3"}, @status=404>):
+  excon (0.13.4) lib/excon/connection.rb:266:in `request_kernel'
+  excon (0.13.4) lib/excon/connection.rb:97:in `request'
+  fog (1.3.1) lib/fog/core/connection.rb:20:in `request'
+  fog (1.3.1) lib/fog/aws/storage.rb:359:in `request'
+  fog (1.3.1) lib/fog/aws/requests/storage/put_object.rb:43:in `put_object'
+  fog (1.3.1) lib/fog/aws/models/storage/file.rb:133:in `save'
+  fog (1.3.1) lib/fog/core/collection.rb:50:in `create'
+  carrierwave (0.5.8) lib/carrierwave/storage/fog.rb:230:in `store'
+  carrierwave (0.5.8) lib/carrierwave/storage/fog.rb:79:in `store!'
+  carrierwave (0.5.8) lib/carrierwave/uploader/store.rb:59:in `block in store!'
+  carrierwave (0.5.8) lib/carrierwave/uploader/callbacks.rb:17:in `with_callbacks'
+  carrierwave (0.5.8) lib/carrierwave/uploader/store.rb:58:in `store!'
+  carrierwave (0.5.8) lib/carrierwave/mount.rb:347:in `store!'
+  carrierwave (0.5.8) lib/carrierwave/mount.rb:217:in `store_photo!'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:416:in `_run__3353048831537967333__save__3879012555435462576__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_save_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/persistence.rb:84:in `save'
+  activerecord (3.2.8) lib/active_record/validations.rb:50:in `save'
+  activerecord (3.2.8) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block (2 levels) in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:295:in `block in with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:208:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:293:in `with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:252:in `rollback_active_record_state!'
+  activerecord (3.2.8) lib/active_record/transactions.rb:240:in `save'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:28:in `block in save_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_save_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:27:in `save_resource'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:22:in `block in create_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_create_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:21:in `create_resource'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:33:in `create'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/actions.rb:48:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__4187127054294065952__process_action__2961915641702219949__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2461184832312194425__call__3879012555435462576__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started POST "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:20:05 -0500
+Processing by Admin::LattesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OCLeFLYZlM1T1Ip4b5pqk+n5Ib3VTrsPSVs9v2p/ezo=", "latte"=>{"location"=>"Inversion", "comments"=>"Wow, this is cool art.", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f9795923450 @original_filename="latte_art8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"latte[photo]\"; filename=\"latte_art8.jpeg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tm/wctmr5rn5bx1_2w7lql5mg840000gn/T/RackMultipart20120826-36257-9m3z04>>, "submitted_by"=>"Ben"}, "commit"=>"Create Latte"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "lattes" ("comments", "created_at", "location", "photo", "submitted_by", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["comments", "Wow, this is cool art."], ["created_at", Sun, 26 Aug 2012 20:20:05 UTC +00:00], ["location", "Inversion"], ["photo", "latte_art8.jpeg"], ["submitted_by", "Ben"], ["updated_at", Sun, 26 Aug 2012 20:20:05 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/lattes/3
+Completed 302 Found in 1895ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/lattes/3" for 127.0.0.1 at 2012-08-26 15:20:07 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.3ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Latte' AND "active_admin_comments"."resource_id" = '3' AND "active_admin_comments"."namespace" = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Latte' AND "active_admin_comments"."resource_id" = '3' AND "active_admin_comments"."namespace" = 'admin'[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (49.7ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:20:07 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:20:07 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes/3" for 127.0.0.1 at 2012-08-26 15:22:01 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.2ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (11.7ms)
+Completed 200 OK in 87ms (Views: 14.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:22:02 -0500
+Served asset /active_admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:22:02 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes/3" for 127.0.0.1 at 2012-08-26 15:22:25 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.2ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (13.7ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (undefined local variable or method `photo' for #<ActiveAdmin::Views::Pages::Show:0x007f9795bf3f90>):
+    1: render renderer_for(:show)
+  app/admin/lattes.rb:7:in `block (4 levels) in <top (required)>'
+  app/admin/lattes.rb:6:in `block (3 levels) in <top (required)>'
+  app/admin/lattes.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/admin/lattes/3" for 127.0.0.1 at 2012-08-26 15:22:31 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.1ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (12.1ms)
+Completed 200 OK in 50ms (Views: 14.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:22:32 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:22:32 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes/3/edit" for 127.0.0.1 at 2012-08-26 15:22:39 -0500
+Processing by Admin::LattesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.2ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1  [["id", 3]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (67.9ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:22:39 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:22:39 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 15:24:30 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (10.7ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:24:30 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:24:30 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:24:30 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (1ms)
+
+
+Started GET "/lattes.json" for 127.0.0.1 at 2012-08-26 15:24:33 -0500
+Processing by LattesController#index as JSON
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant LattesController::Lattes):
+  app/controllers/lattes_controller.rb:5:in `index'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/lattes/index.json" for 127.0.0.1 at 2012-08-26 15:24:40 -0500
+
+AbstractController::ActionNotFound (The action 'show' could not be found for LattesController):
+  actionpack (3.2.8) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2461184832312194425__call__3879012555435462576__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:24:45 -0500
+Processing by LattesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant LattesController::Lattes):
+  app/controllers/lattes_controller.rb:5:in `index'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:25:17 -0500
+Processing by LattesController#index as HTML
+  [1m[36mLatte Load (0.3ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:26:53 -0500
+Processing by LattesController#index as HTML
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `asset_url' for :PhotoUploader):
+  app/uploaders/photo_uploader.rb:23:in `default_url'
+  app/controllers/lattes_controller.rb:6:in `index'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:27:02 -0500
+Processing by LattesController#index as HTML
+  [1m[36mLatte Load (0.2ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY created_at DESC[0m
+Completed 500 Internal Server Error in 10ms
+
+NameError (undefined local variable or method `config' for :PhotoUploader):
+  app/uploaders/photo_uploader.rb:23:in `default_url'
+  app/controllers/lattes_controller.rb:6:in `index'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:29:47 -0500
+Processing by LattesController#index as HTML
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:29:56 -0500
+Processing by LattesController#index as HTML
+  [1m[36mLatte Load (0.2ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY created_at DESC[0m
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `asset_url' for :PhotoUploader):
+  app/uploaders/photo_uploader.rb:24:in `default_url'
+  app/controllers/lattes_controller.rb:6:in `index'
+
+
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/lattes" for 127.0.0.1 at 2012-08-26 15:29:59 -0500
+Processing by LattesController#index as HTML
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 5ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (64.7ms)
+Completed 200 OK in 103ms (Views: 88.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /active_admin.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /active_admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-26 15:33:15 -0500
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-08-26 15:33:20 -0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozZDl4eSzzhhfm4FyuleCcBS4CCxttQ0QlCJbqJRNEo=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "admin_users" SET "current_sign_in_at" = '2012-08-26 20:33:20.638540', "sign_in_count" = 2, "updated_at" = '2012-08-26 20:33:20.639618' WHERE "admin_users"."id" = 1[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 113ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 15:33:20 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (10.6ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:33:20 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:33:20 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:33:20 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 15:33:53 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (19.6ms)
+Completed 200 OK in 91ms (Views: 22.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:33:53 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:33:53 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:33:53 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 15:34:07 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.2ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (19.6ms)
+Completed 200 OK in 90ms (Views: 21.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:34:07 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:34:07 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:34:07 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:35:16 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.1ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.4ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (168.7ms)
+Completed 200 OK in 200ms (Views: 169.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:35:17 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:35:17 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-26 15:35:17 -0500
+Served asset /active_admin/orderable.png - 304 Not Modified (13ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-26 15:35:17 -0500
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-08-26 15:35:17 -0500
+Served asset /active_admin/datepicker/datepicker-nipple.png - 304 Not Modified (2ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:37:25 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "lattes" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (125.5ms)
+Completed 200 OK in 158ms (Views: 126.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:37:25 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:37:25 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:37:25 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:37:48 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.1ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.2ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (126.9ms)
+Completed 200 OK in 194ms (Views: 127.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:37:48 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:37:48 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:37:48 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes/new" for 127.0.0.1 at 2012-08-26 15:37:52 -0500
+Processing by Admin::LattesController#new as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (62.3ms)
+Completed 200 OK in 67ms (Views: 64.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:37:52 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:37:52 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:38:07 -0500
+Processing by Admin::LattesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozZDl4eSzzhhfm4FyuleCcBS4CCxttQ0QlCJbqJRNEo=", "latte"=>{"location"=>"Catalina", "comments"=>"This one is scary", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f979a876480 @original_filename="latte_art1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"latte[photo]\"; filename=\"latte_art1.jpeg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/tm/wctmr5rn5bx1_2w7lql5mg840000gn/T/RackMultipart20120826-36257-188xygv>>, "submitted_by"=>"Ben"}, "commit"=>"Create Latte"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "lattes" ("comments", "created_at", "location", "photo", "submitted_by", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comments", "This one is scary"], ["created_at", Sun, 26 Aug 2012 20:38:08 UTC +00:00], ["location", "Catalina"], ["photo", "latte_art1.jpeg"], ["submitted_by", "Ben"], ["updated_at", Sun, 26 Aug 2012 20:38:08 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/lattes/4
+Completed 302 Found in 2084ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/lattes/4" for 127.0.0.1 at 2012-08-26 15:38:10 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.1ms)[0m  SELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (12.3ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:38:10 -0500
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:38:10 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 15:38:12 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.5ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (0.6ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (161.5ms)
+Completed 200 OK in 165ms (Views: 161.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:38:12 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:38:12 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:38:12 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes?utf8=%E2%9C%93&q%5Blocation_contains%5D=&q%5Bcomments_contains%5D=&q%5Bphoto_contains%5D=&q%5Bsubmitted_by_contains%5D=Bn&q%5Bcreated_at_gte%5D=&q%5Bcreated_at_lte%5D=&q%5Bupdated_at_gte%5D=&q%5Bupdated_at_lte%5D=&commit=Filter&order=id_desc&scope=" for 127.0.0.1 at 2012-08-26 15:38:18 -0500
+Processing by Admin::LattesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"location_contains"=>"", "comments_contains"=>"", "photo_contains"=>"", "submitted_by_contains"=>"Bn", "created_at_gte"=>"", "created_at_lte"=>"", "updated_at_gte"=>"", "updated_at_lte"=>""}, "commit"=>"Filter", "order"=>"id_desc", "scope"=>""}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (282.1ms)[0m  [1mSELECT 1 AS one FROM "lattes" WHERE ("lattes"."submitted_by" ILIKE '%Bn%') LIMIT 1 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (396.1ms)
+Completed 200 OK in 401ms (Views: 116.2ms | ActiveRecord: 282.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:38:18 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:38:18 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/lattes?utf8=%E2%9C%93&q%5Blocation_contains%5D=&q%5Bcomments_contains%5D=&q%5Bphoto_contains%5D=&q%5Bsubmitted_by_contains%5D=Ben&q%5Bcreated_at_gte%5D=&q%5Bcreated_at_lte%5D=&q%5Bupdated_at_gte%5D=&q%5Bupdated_at_lte%5D=&commit=Filter&order=id_desc&scope=" for 127.0.0.1 at 2012-08-26 15:38:22 -0500
+Processing by Admin::LattesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"location_contains"=>"", "comments_contains"=>"", "photo_contains"=>"", "submitted_by_contains"=>"Ben", "created_at_gte"=>"", "created_at_lte"=>"", "updated_at_gte"=>"", "updated_at_lte"=>""}, "commit"=>"Filter", "order"=>"id_desc", "scope"=>""}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "lattes" WHERE ("lattes"."submitted_by" ILIKE '%Ben%') LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "lattes" WHERE ("lattes"."submitted_by" ILIKE '%Ben%')
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" WHERE ("lattes"."submitted_by" ILIKE '%Ben%') LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mLatte Load (0.3ms)[0m  SELECT "lattes".* FROM "lattes" WHERE ("lattes"."submitted_by" ILIKE '%Ben%') ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (162.3ms)
+Completed 200 OK in 168ms (Views: 162.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:38:22 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:38:22 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:38:22 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 15:38:36 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (10.2ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 15:38:36 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 15:38:36 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 15:38:36 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/Development/rails/best_latte/config/environment.rb:5)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-26 16:44:06 -0500
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 16:44:08 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (76.7ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Compiled active_admin.css  (981ms)  (pid 55742)
+  [1m[35mLatte Load (0.5ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (1011.0ms)
+Completed 200 OK in 1342ms (Views: 1053.7ms | ActiveRecord: 210.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 16:44:09 -0500
+Served asset /active_admin.css - 200 OK (6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 16:44:09 -0500
+Compiled jquery.js  (30ms)  (pid 55742)
+Compiled jquery-ui.js  (2ms)  (pid 55742)
+Compiled jquery_ujs.js  (0ms)  (pid 55742)
+Compiled active_admin/application.js  (0ms)  (pid 55742)
+Compiled active_admin/base.js  (51ms)  (pid 55742)
+Compiled active_admin.js  (55ms)  (pid 55742)
+Served asset /active_admin.js - 200 OK (92ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 16:44:09 -0500
+Served asset /coffee-nophoto.png - 200 OK (2ms)
+
+
+Started GET "/lattes.json" for 127.0.0.1 at 2012-08-26 16:44:15 -0500
+Processing by LattesController#index as JSON
+  [1m[36mLatte Load (0.5ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY created_at DESC[0m
+Completed 200 OK in 481ms (Views: 480.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 16:46:28 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (0.4ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (12.2ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. (called from <top (required)> at /Users/ben/Development/rails/best_latte/config/environment.rb:5)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-26 23:15:20 -0500
+Served asset /rails.png - 304 Not Modified (20ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-26 23:15:22 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Compiled active_admin.css  (1095ms)  (pid 67103)
+  [1m[35mLatte Load (50.9ms)[0m  SELECT "lattes".* FROM "lattes" ORDER BY created_at DESC LIMIT 5
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (1215.6ms)
+Completed 200 OK in 1489ms (Views: 1231.6ms | ActiveRecord: 54.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 23:15:23 -0500
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 23:15:23 -0500
+Compiled jquery.js  (32ms)  (pid 67103)
+Compiled jquery-ui.js  (2ms)  (pid 67103)
+Compiled jquery_ujs.js  (0ms)  (pid 67103)
+Compiled active_admin/application.js  (0ms)  (pid 67103)
+Compiled active_admin/base.js  (174ms)  (pid 67103)
+Compiled active_admin.js  (191ms)  (pid 67103)
+Served asset /active_admin.js - 304 Not Modified (265ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 23:15:24 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (17ms)
+
+
+Started GET "/admin/lattes" for 127.0.0.1 at 2012-08-26 23:15:27 -0500
+Processing by Admin::LattesController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mLatte Exists (0.5ms)[0m  SELECT 1 AS one FROM "lattes" LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "lattes" [0m
+  [1m[35m (17.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "lattes" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mLatte Load (8.1ms)[0m  [1mSELECT "lattes".* FROM "lattes" ORDER BY "lattes"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (294.3ms)
+Completed 200 OK in 326ms (Views: 285.3ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 23:15:28 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 23:15:28 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-26 23:15:28 -0500
+Served asset /active_admin/orderable.png - 200 OK (22ms)
+
+
+Started GET "/assets/coffee-nophoto.png" for 127.0.0.1 at 2012-08-26 23:15:28 -0500
+Served asset /coffee-nophoto.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-26 23:15:28 -0500
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (15ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-08-26 23:15:28 -0500
+Served asset /active_admin/datepicker/datepicker-nipple.png - 200 OK (3ms)
+
+
+Started GET "/admin/lattes/4" for 127.0.0.1 at 2012-08-26 23:15:32 -0500
+Processing by Admin::LattesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mLatte Load (26.4ms)[0m  [1mSELECT "lattes".* FROM "lattes" WHERE "lattes"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered /Users/ben/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (11.3ms)
+Completed 200 OK in 58ms (Views: 28.3ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-26 23:15:32 -0500
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-26 23:15:32 -0500
+Served asset /active_admin.js - 304 Not Modified (0ms)
